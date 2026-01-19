@@ -1,0 +1,10 @@
+<h2>Get Employee By ID</h2>
+
+<input [(ngModel)]="id" placeholder="Enter ID" />
+<button (click)="getEmployee()">Search</button>
+
+<div *ngIf="employee">
+  <p><b>Name:</b> {{ employee.firstName }} {{ employee.lastName }}</p>
+  <p><b>Email:</b> {{ employee.email }}</p>
+  <p><b>Dept:</b> {{ employee.department }}</p>
+</div>
